@@ -5,6 +5,7 @@ fieldset,img{border:0;}
 ol,ul{list-style:none;}
 /*base css*/
 body {background:#f2f8f4; font-size:12px;color:#525353;font-family:"微软雅黑",arial; margin:0px; padding:0px;}
+body,html{overflow:auto}
 body,td,th {font-size: 12px;}
 hr{ border:0; padding:0; margin:0; display:block}
 a{color:#686868;text-decoration:none;}
@@ -135,10 +136,11 @@ a:hover{text-decoration:none;}
 .main .rigbox .zx dd ul li a:hover { color:#008C29; text-decoration:underline;}
 
 
-.djyx { width:1012px; height:600px;}
-.djyx .xyxbox { float:left; width:818px; height:600px; overflow:hidden;}
+.djyx { width:100%; height:600px;}
+.djyx .xyxbox { margin-right:193px; height:auto; overflow:hidden;}
+.djyx .xyxbox #flash { overflow:hidden; width:100%; height:100%; position: fixed; top:0px; right:0px; margin-right:93px;}
 
-.djyx .rig { float:left; margin-left:10px; height:auto; overflow:hidden; width:183px; background:#eff5fa; border-left:1px solid #dedede;}
+.djyx .rig { right:0px ;position: absolute; top:0px; height:auto; overflow:hidden; width:183px; background:#eff5fa; border-left:1px solid #dedede;}
 
 .djyx .rig .cnxh { overflow:hidden; height:auto;}
 .djyx .rig .cnxh dt { height:36px; line-height:36px; border-bottom:1px solid #d6d8da;}
@@ -157,6 +159,7 @@ a:hover{text-decoration:none;}
 .djyx .rig .czzn {position:fixed; z-index:999; bottom:0px; right:0px; width:183px; background:#eff5fa;}
 .djyx .rig .czzn dt { height:36px; line-height:36px; border-bottom:1px solid #d6d8da;}
 .djyx .rig .czzn dt h2 { float:left; font-weight:normal; color:#1e2329; font-size:16px; margin-left:10px;}
+.djyx .rig .czzn dt a { font-size:20px; float:right; margin-right:10px;}
 .djyx .rig .czzn dd { overflow:hidden; height:auto; padding:0px 10px; line-height:200%; color:#6c7071;}
 .djyx .rig .czzn dd span { color:#07b113;}
 
@@ -281,7 +284,7 @@ a:hover{text-decoration:none;}
 .wyyxread .rigbox .zx dt h2 { float:left; font-weight:normal; color:#1e2329; font-size:16px;}
 .wyyxread .rigbox .zx dd { overflow:hidden; height:auto;}
 .wyyxread .rigbox .zx dd ul li { display:block; height:38px; line-height:38px; border-bottom:1px dashed #dedede; width:250px; overflow:hidden;}
-.wyyxread .rigbox .zx dd ul li a { display:block; height:38px; line-height:38px; overflow:hidden; /*width:77px;*/color:#1e2329;}
+.wyyxread .rigbox .zx dd ul li a { display:block; height:38px; line-height:38px; overflow:hidden; width:77px; color:#1e2329;}
 
 
 .pages { overflow:hidden; width:100%; text-align:center; height:auto; margin:15px 0px;}

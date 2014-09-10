@@ -8,7 +8,7 @@
 		mkdir($dir,0777,true);
 	}
 	$table = "`4399`";
-	$sql = "select * from ".$table." where flash != '' and id='67757' ";
+	$sql = "select * from ".$table." where flash != ''";
 	$result = mysql_query($sql);
 	
 	while( $row = mysql_fetch_array($result) )
@@ -23,8 +23,12 @@
 <meta name="description" content="<?php echo $row['name']; ?>--小游戏" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="/gamebox/box_model/style/yueact.css" rel="stylesheet" type="text/css">
+<link href="favicon.ico" href="/gamebox/box_model/images/favicon.ico" rel="bookmark" type="image/x-icon" /> 
+<link href="favicon.ico" href="/gamebox/box_model/images/favicon.ico" rel="icon" type="image/x-icon" /> 
+<link href="favicon.ico" href="/gamebox/box_model/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <script src="/gamebox/box_model/js/jquery.js" type="text/javascript"></script>
 <script src="/gamebox/box_model/js/swfobject.js" type="text/javascript"></script>
+<script src="/gamebox/box_model/js/yxhzjs.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#refresh").click(function(){
@@ -54,26 +58,10 @@
 		});
 	})
 </script>
-<!--[if lte IE 6]>
-<style type="text/css">
-html {
-    /*这个可以让IE6下滚动时无抖动*/
-    background: url(about:black) no-repeat fixed
-}
-.tck {
-    position: absolute;
-}
- 
-/*下面三组规则用于IE6下top计算*/
-.tck {
-    top: expression(offsetParent.scrollTop + offsetParent.clientHeight-offsetHeight);
-}
-</style>
-<![endif]-->
 
 
 </head>
-<body style="width:1012px; height:600px;">
+<body>
 <div class="djyx">
 	<div class="xyxbox">
 		<!--
@@ -81,7 +69,7 @@ html {
 		-->
 		<div id="flash">flash加载中..</div>
 		<script type="text/javascript">
-		var so = new SWFObject("<?php echo $row['flash']; ?>", "mymovie", "818", "600", "7", "#ffffff");
+		var so = new SWFObject("<?php echo $row['flash']; ?>", "mymovie", "100%", "100%", "7", "#ffffff");
 		so.addParam("quality", "high");
 		so.addParam("wmode", "transparent");
 		so.addParam("menu", "false");
@@ -118,7 +106,7 @@ html {
 			</dd>
 		</dl><!--rmxyx end-->	
 		<dl class="czzn">
-			<dt><h2>操作指南</h2></dt>
+			<dt><h2>操作指南</h2> <a href="javascript:void(0)">-</a></dt>
 			  <dd>
 				<span>游戏目标：</span><br>
 				<?php 
@@ -153,7 +141,7 @@ html {
 </html>
 <?php
 		$contents = ob_get_contents();
-		ob_clean();
+		ob_end_clean();
 		$id = $row['id'] ;
 		$file = $dir.$id.".html";
 		if(file_put_contents($file,$contents))
