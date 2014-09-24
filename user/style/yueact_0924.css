@@ -1,0 +1,110 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+:focus{outline: 0;} 
+ol,ul{list-style:none;}
+/*base css*/
+body {background:url(../images/body.jpg) ; font-size:12px;color:#666666;font-family:"微软雅黑",arial; margin:0px; padding:0px;}
+body,td,th {font-size: 12px;}
+hr{ border:0; padding:0; margin:0; display:block}
+a{color:#686868;text-decoration:none;}
+a:hover{text-decoration:none;}
+.clear{clear:both;}
+
+.txxg { width:718px; height:auto; border:1px solid #eeeded; padding-bottom:20px;}
+.txxg .tpsc { overflow:hidden; height:auto; margin:20px;}
+.txxg .tpsc .bdsc { float:left; background:url(../images/pz.jpg) no-repeat center left; height:27px; line-height:27px; width:119px; border:none;}
+.txxg .tpsc .bdsc:hover { background:url(../images/pzon.jpg) no-repeat center left;}
+.txxg .tpsc span { float:left; margin-left:20px; background:#FFF9DF; height:20px; line-height:20px; padding:0px 5px; margin-top:5px;}
+.txxg .box { height:auto; overflow:hidden;}
+.txxg .box .scfs { width:350px; text-align:center; border-right:1px solid #eeeded; float:left;}
+.txxg .box .scfs img { border:1px solid #B2B2B2;}
+.txxg .box .btx { float:left; width:240px; text-align:center; height:auto; line-height:24px; color:#9A9A9A;}
+.txxg .box .btx span { width:184px; display:block; margin:0 auto; text-align:left; margin-bottom:20px; color:#AB2501;}
+.txxg .box .btx img { border:1px solid #B2B2B2; width:180px; height:180px; display:block; margin:0 auto;}
+
+.txxg .box .xtx { float:left; height:auto; overflow:hidden; width:120px; text-align:center; color:#9A9A9A; line-height:22px;}
+.txxg .box .xtx .tx50 { width:62px; height:auto; overflow:hidden; margin:0 auto; margin-top:70px;}
+.txxg .box .xtx .tx50 img { width:50px; height:50px; border:1px solid #B2B2B2; display:block; margin:0 auto;}
+
+.txxg .box .xtx .tx30 { width:62px; height:auto; overflow:hidden; margin:0 auto; margin-top:20px;}
+.txxg .box .xtx .tx30 img { width:30px; height:30px; border:1px solid #B2B2B2; display:block; margin:0 auto;}
+
+
+.xgzl b { display:block; margin-left:20px; font-size:20px;}
+.xgzl table tr td { padding:5px; height:30px; line-height:30px; font-size:14px;}
+.xgzl table tr td .inbg,.xgzl table tr td select { color:	#666; padding:0px 5px; border-radius:3px; border:1px solid #c8c8c8; width:180px; height:28px; line-height:28px;}
+.xgzl table tr td label { float:left; margin-right:10px;}
+.xgzl table tr td label input { margin-right:5px;}
+.xgzl table tr td span { color:#FF0000;}
+.xgzl table tr td .bcxg { width:142px; height:42px; line-height:42px; text-align:center; font-size:14px; color:#FFFFFF; background:url(../images/tj.jpg) no-repeat center; border:none; cursor:pointer;}
+.xgzl table tr td .bcxg:hover { background:url(../images/tjon.jpg) no-repeat center;}
+
+
+/*
+ * imgAreaSelect default style
+ */
+
+.imgareaselect-border1 {
+	background: url(images/border-v.gif) repeat-y left top;
+}
+
+.imgareaselect-border2 {
+    background: url(images/border-h.gif) repeat-x left top;
+}
+
+.imgareaselect-border3 {
+    background: url(images/border-v.gif) repeat-y right top;
+}
+
+.imgareaselect-border4 {
+    background: url(images/border-h.gif) repeat-x left bottom;
+}
+
+.imgareaselect-border1, .imgareaselect-border2,
+.imgareaselect-border3, .imgareaselect-border4 {
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-handle {
+    background-color: #fff;
+    border: solid 1px #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.imgareaselect-outer {
+    background-color: #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.imgareaselect-selection {  
+}
+
+.portrait_left {width:978px; margin:0 auto; text-align:center;}
+
+
+
+
+.portrait_left{float: left; height: auto; width: 306px;}
+#avatar{ max-height:280px; max-width:280px; display:block;}
+.portrait_revolve{height: auto; padding-top: 15px; width: 306px;}
+.revolve_left{background: url("images/setup.gif") repeat scroll -128px -55px rgba(0, 0, 0, 0); float: left; height: 22px; width: 22px;}
+.revol_left_txt{color: #FF6699; float: left; height: 22px; line-height: 22px; text-align: left; width: 110px;}
+.revol_left_txt{color: #FF6699;float: left;height: 22px;line-height: 22px;text-align: left;width: 110px;}
+.revol_right_txt{color: #FF6699;float: left;height: 22px;line-height: 22px;text-align: right;width: 131px;}
+.revolve_right{background: url("images/setup.gif") repeat scroll -128px -77px rgba(0, 0, 0, 0); float: left; height: 22px; width: 22px;}
+.setup_but{height: 42px; padding-left: 93px; padding-top: 40px; width: auto;}
+.baseinf_but1 {background: url(../images/tj.jpg) no-repeat center; border: medium none; color: #FFFFFF; font-size: 14px; font-weight: bold; height: 41px; line-height: 41px; margin-right: 22px; outline: medium none; width: 142px; cursor:pointer;}
+.portrait_right{float: left; font-size: 12px; height: 280px; padding-left: 80px; width: 320px;}
+.portrait_right_bottom{color: #666666; height: 220px; width: 310px;}
+.portrait_right_txt { color:#ab2501;}
+.portrait1{float: left; height: 200px; width: 180px; margin-left:60px; text-align:center;}
+#img_big_preview{height: 180px; margin: 0 auto; width: 180px;}
+.img_preview{border: 1px solid #000000; overflow: hidden; position: relative;}
+.img_preview img{margin: 0; position: relative;}
+.portrait2{float: left; height: auto; padding-left: 40px; width: 68px; margin-left:70px; text-align:center;}
+#img_small_preview{height: 49px; margin: 0 auto; width: 49px;}
+.img_preview{border: 1px solid #000000; overflow: hidden; position: relative;}
